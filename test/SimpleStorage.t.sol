@@ -6,7 +6,7 @@ import { Test } from "forge-std/src/Test.sol";
 import { FHE, inEuint8, euint8 } from "@fhenixprotocol/contracts/FHE.sol";
 import { Permissioned, Permission } from "@fhenixprotocol/contracts/access/Permissioned.sol";
 import { Permission, PermissionHelper } from "../util/PermissionHelper.sol";
-import { SimpleStorage } from "../src/SimpleStorage.sol";
+import { SimpleStorage } from "../contracts/SimpleStorage.sol";
 import { FheEnabled } from "../util/FheHelper.sol";
 
 contract SimpleStorageTest is Test, FheEnabled {

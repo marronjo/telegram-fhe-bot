@@ -1,7 +1,7 @@
 // // SPDX-License-Identifier: UNLICENSED
 pragma solidity >=0.8.25 <0.9.0;
 
-import { ExampleToken } from "../src/FHERC20.sol";
+import { ExampleToken } from "../contracts/FHERC20.sol";
 
 import { BaseScript } from "./Base.s.sol";
 

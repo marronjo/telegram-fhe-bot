@@ -3,7 +3,7 @@ pragma solidity >=0.8.25 <0.9.0;
 
 import { Test } from "forge-std/src/Test.sol";
 
-import { ExampleToken, FHERC20NotAuthorized } from "../src/FHERC20.sol";
+import { ExampleToken, FHERC20NotAuthorized } from "../contracts/FHERC20.sol";
 import { FheEnabled } from "../util/FheHelper.sol";
 import { Permission, PermissionHelper } from "../util/PermissionHelper.sol";
 
