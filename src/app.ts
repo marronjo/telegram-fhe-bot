@@ -18,6 +18,8 @@ let contract: Contract;
 
 const fhenixClient = new FhenixClient({ provider: provider as unknown as SupportedProvider });
 
+const blockExplorerUrl = 'https://explorer.nitrogen.fhenix.zone/address/';
+
 const channelStatus = new Map<string, ChatStatus>();
 
 enum ChatStatus {
@@ -46,7 +48,8 @@ bot.action('deploy', async (ctx) => {
     ctx.reply('Deploying contract...');
     contract = await ContractInstance.deploy();
     await contract.deployed();
-    replyAndLog(ctx, 'New contract deployed to: ' + contract.address);
+    console.log('New contract deployed to: ' + contract.address);
+    ctx.replyWithMarkdownV2('New contract deployed to [' + contract.address + '](' + blockExplorerUrl +  contract.address + ')')
 });
 
 bot.action('getEncrypted', async (ctx) => {
