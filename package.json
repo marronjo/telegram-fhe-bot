@@ -35,10 +35,10 @@
   "private": true,
   "scripts": {
     "clean": "rm -rf cache out",
-    "build": "forge build",
+    "build:sol": "forge build",
     "bot": "tsc && node dist/app.js",
-    "build:ts": "tsc",
-    "start:ts": "node dist/app.js",
+    "build": "tsc",
+    "start": "node dist/app.js",
     "lint": "bun run lint:sol && bun run prettier:check",
     "lint:sol": "forge fmt --check && bun solhint {script,src,test}/**/*.sol",
     "prettier:check": "prettier --check \"**/*.{json,md,yml}\" --ignore-path \".prettierignore\"",
