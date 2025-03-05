@@ -2,7 +2,6 @@
 cache
 coverage
 node_modules
-out
 
 # files
 *.env
@@ -19,3 +18,9 @@ yarn.lock
 !broadcast
 broadcast/*
 broadcast/*/31337/
+
+!src/out
+src/out/*
+!src/out/SimpleStorage.sol/
+
+dist

@@ -9,7 +9,7 @@
   gas_reports = ["*"]
   optimizer = true
   optimizer_runs = 10_000
-  out = "out"
+  out = "src/out"
   script = "script"
   solc = "0.8.25"
   src = "contracts"
